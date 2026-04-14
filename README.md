@@ -44,7 +44,7 @@ Prepare an Excel file named **`nma_input.xlsx`** with the following columns (exa
 
 - Each study must contribute **at least two rows** (one per arm). Multi‑arm studies are fully supported.
 - Treatment names must be consistent across studies (e.g., do not write "A" in one study and "A (low dose)" in another).
-- The script assumes a **continuous outcome** and uses **SMD** as the effect measure. For binary outcomes or other effect sizes, modify the `sm` argument (see [Customisation Guide](#customisation-guide)).
+- The script assumes a **continuous outcome** and uses **SMD** as the effect measure. For binary outcomes or other effect sizes, modify the `sm` argument (see [🔧 Customisation Guide](#-customisation-guide)).
 
 **Example data snippet:**
 
@@ -99,7 +99,7 @@ install.packages(c("readxl", "dplyr", "netmeta", "ggplot2", "meta"))
 | Order of treatments in funnel plot | Change the `order` argument inside `funnel()` – by default it uses the P-score ranking |
 | Title or axis labels | Add or modify `main`, `xlab`, `ylab` in the respective plotting calls |
 
-## 📜 Citation and License
+## 📜 Citation & License
 
 If you use this script in a publication, please cite the core R packages:
 
