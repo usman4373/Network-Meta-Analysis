@@ -11,9 +11,6 @@ This repository provides a complete, reproducible R script for **random‑effect
 - [Output Files](#output-files)
 - [How to Run](#how-to-run)
 - [Customisation Guide](#customisation-guide)
-- [Dependencies](#dependencies)
-- [Example Workflow](#example-workflow)
-- [Troubleshooting](#troubleshooting)
 - [Citation & License](#citation--license)
 
 ---
@@ -89,3 +86,25 @@ Open R or RStudio and run:
 
 ```r
 install.packages(c("readxl", "dplyr", "netmeta", "ggplot2", "meta"))
+```
+
+## 🔧 Customisation Guide
+
+| What you want to change | Where to modify in the script |
+|------------------------|------------------------------|
+| Reference treatment for forest plot | In `forest(net, ref = "C-ESPB", ...)` – replace `"C-ESPB"` with a valid treatment name from your data |
+| Effect measure (e.g., MD, OR, RR) | In `pairwise(..., sm = "SMD")` and `netmeta(..., sm = "SMD")` – change `"SMD"` to `"MD"`, `"OR"`, etc. |
+| Fixed-effect instead of random-effects | In `netmeta()` set `common = TRUE`, `random = FALSE` |
+| Plot resolution / size | Modify `width`, `height`, `res` in each `png()` call (e.g., `width = 10`, `height = 8`, `res = 600`) |
+| Order of treatments in funnel plot | Change the `order` argument inside `funnel()` – by default it uses the P-score ranking |
+| Title or axis labels | Add or modify `main`, `xlab`, `ylab` in the respective plotting calls |
+
+## 📜 Citation and License
+
+If you use this script in a publication, please cite the core R packages:
+
+    Rücker G, Schwarzer G, Krahn U, König J (2024). netmeta: Network Meta‑Analysis using Frequentist Methods. R package version 2.8-0.
+    Schwarzer G, Carpenter JR, Rücker G (2015). meta: An R package for meta‑analysis. R News, 15(3): 9–13.
+
+License: MIT
+Disclaimer: This script is provided “as is”, without warranty of any kind. The authors are not responsible for any errors or consequences arising from its use.
