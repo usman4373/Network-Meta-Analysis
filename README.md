@@ -6,12 +6,12 @@ This repository provides a complete, reproducible R script for **random‑effect
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Input Data Requirements](#input-data-requirements)
-- [Output Files](#output-files)
-- [How to Run](#how-to-run)
-- [Customisation Guide](#customisation-guide)
-- [Citation & License](#citation--license)
+- [✨ Features](#-features)
+- [📥 Input Data Requirements](#-input-data-requirements)
+- [📤 Output Files](#-output-files)
+- [🚀 How to Run](#-how-to-run)
+- [🔧 Customisation Guide](#-customisation-guide)
+- [📜 Citation & License](#-citation--license)
 
 ---
 
@@ -107,4 +107,5 @@ If you use this script in a publication, please cite the core R packages:
     Schwarzer G, Carpenter JR, Rücker G (2015). meta: An R package for meta‑analysis. R News, 15(3): 9–13.
 
 License: MIT
+
 Disclaimer: This script is provided “as is”, without warranty of any kind. The authors are not responsible for any errors or consequences arising from its use.
